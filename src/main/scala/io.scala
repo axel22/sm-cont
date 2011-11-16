@@ -62,12 +62,10 @@ object io {
   def startKernel() {
     while (kernel.blockers.exists(b => b.live && b.ready)) {
       for (b <- kernel.blockers) {
-        if (b.blocked) {
-          if (b.ready) {
-            val data = b.blockedOn.pull()
-            b.continuation(data)
-          }
-        } else if (b.live) {
+        if (b.blocked && b.ready) {
+          val data = b.blockedOn.pull()
+          b.continuation(data)
+        } else if (!b.blocked && b.live) {
           b.continuation(null)
         }
       }
