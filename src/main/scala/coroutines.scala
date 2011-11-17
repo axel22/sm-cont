@@ -15,7 +15,7 @@ object coroutines {
     
     def apply(): Unit = {
       continuation()
-      /* if you want to make a coroutine spin forever... look below:
+      /* in case you want to make a coroutine spin forever... look below:
       continuation = () => reset {
         body()
       }
