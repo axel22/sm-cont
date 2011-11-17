@@ -54,6 +54,8 @@ object foreach {
     while (it.hasNext) println(it.next)
   }
   
+  /* HOMEWORK: Implement a foreach that traverses a binary tree (with no parent pointers!). Use that with the `ForeachIterator`. Implement the same binary tree iterator directly. */
+  
 }
 
 

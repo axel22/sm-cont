@@ -3,6 +3,7 @@
 import scala.util.continuations._
 
 
+
 object dynamical {
   
   def foo() = shift {

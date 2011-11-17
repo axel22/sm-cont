@@ -3,6 +3,7 @@
 import scala.util.continuations._
 
 
+
 object firstclass {
   
   def main(args: Array[String]) {

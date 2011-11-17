@@ -3,6 +3,7 @@
 import scala.util.continuations._
 
 
+
 object testlists {
   
   def choice(lo: Int, hi: Int): Int @suspendable = shift {
@@ -23,5 +24,7 @@ object testlists {
       assert(xs.size + ys.size == (xs ++ ys).size, xs + " and " + ys)
     }
   }
+  
+  /* HOMEWORK: Implement the choice operator using the flip operator */
   
 }

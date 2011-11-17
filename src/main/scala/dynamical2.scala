@@ -3,6 +3,7 @@
 import scala.util.continuations._
 
 
+
 object dynamical2 {
   
   def foo(): Int @cpsParam[Int, Int] = shift {

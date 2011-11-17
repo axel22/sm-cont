@@ -3,6 +3,7 @@
 import scala.util.continuations._
 
 
+
 object fork {
   
   def fork(): Int @cpsParam[Unit, Unit] = shift {
@@ -24,5 +25,7 @@ object fork {
       else println("Inside reset on the forked thread: " + Thread.currentThread.getName)
     }
   }
+  
+  /* HOMEWORK: Implement fork() in the same way but by starting a new process instead of a thread (only for the brave; hint: use serialization on continuations and Java Process API)
   
 }

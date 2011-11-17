@@ -3,6 +3,7 @@
 import scala.util.continuations._
 
 
+
 object outputbinary {
   
   def flip: Int @suspendable = shift {

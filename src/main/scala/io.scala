@@ -3,6 +3,7 @@
 import scala.util.continuations._
 
 
+
 object io {
   
   class Channel {
@@ -109,6 +110,10 @@ object io {
     
     startKernel()
   }
+  
+  /* HOMEWORK: add the method `fork()` to blockers, which adds a new blocker to the kernel above, with semantics similar to that of the C `fork()` function */
+  
+  /* HOMEWORK: add the method `sleep(ms)` to blockers above, which makes the blocker dormant for `ms` milliseconds, with semantics similar to what the Java `sleep(ms)` function */
   
 }
 
