@@ -26,6 +26,6 @@ object fork {
     }
   }
   
-  /* HOMEWORK: Implement fork() in the same way but by starting a new process instead of a thread (only for the brave; hint: use serialization on continuations and Java Process API)
+  /* HOMEWORK: Implement fork() in the same way but by starting a new process instead of a thread (only for the brave; hint: use serialization on continuations and Java Process API) */
   
 }
